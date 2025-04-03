@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script src="script.js">
+
+        document.getElementById("form").addEventListener("submit", function(event){
+            // Password validation(min 6 characters)
+
+            if(password.length < 6) {
+                passwordError.textContent = "Password must be atleast 6 characters";
+                isValid - false;
+            }
+
+            // if all validation pass, submit the form
+
+            if(isValid) {
+                alert("form submitted successfully");
+                document.getElementById("form").reset(); // clear the form fields.
+            }
+        })
+    </script>
+</body>
+</html>
